@@ -8,9 +8,8 @@ version '1.0.0'
 client_script 'client.lua'
 shared_script 'config.lua'
 
--- Klasör adı kontrolü
 local resourceName = GetCurrentResourceName()
 if resourceName ~= "rise-blip" then
     print("Klasör adı yanlış.")
-    os.exit() -- Scripti durdurur
+    os.exit()
 end
